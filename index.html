@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&Ma Estratégica</title>
+  <meta name="description" content="Consultoría en compliance y ESG para empresas en LATAM. S&Ma Estratégica impulsa la rentabilidad con propósito.">
+  <meta name="theme-color" content="#1e3a8a">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('mobile-menu');
+      nav.classList.toggle('hidden');
+    }
+  </script>
+  <style>
+    /* Logo en la esquina */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px; /* Ajusta el tamaño del logo */
+      height: auto;
+    }
+    /* Estilo de los botones sociales */
+    .social-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .social-buttons img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+    }
+    .social-buttons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-[#f8fafc]">
+
+  <!-- Logo en la esquina -->
+  <img src="images/logo.png" alt="S&Ma Estratégica" class="logo">
+
+  <!-- Header -->
+  <header class="py-4 px-6 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-900">S&Ma Estratégica</h1>
+    <div class="md:hidden">
+      <button onclick="toggleMenu()" aria-label="Abrir menú" class="text-blue-900 focus:outline-none">
+        &#9776;
+      </button>
+    </div>
+    <nav class="hidden md:flex space-x-4" id="desktop-menu" aria-label="Menú principal">
+      <a href="#" class="text-gray-700 hover:text-blue-700">Inicio</a>
+      <a href="#servicios" class="text-gray-700 hover:text-blue-700">Servicios</a>
+      <a href="#porque" class="text-gray-700 hover:text-blue-700">¿Por qué S&Ma?</a>
+      <a href="#equipo" class="text-gray-700 hover:text-blue-700">Equipo</a>
+      <a href="#contacto" class="text-gray-700 hover:text-blue-700">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Menú móvil -->
+  <nav class="md:hidden hidden flex-col px-6 space-y-2" id="mobile-menu" aria-label="Menú móvil">
+    <a href="#" class="text-gray-700 hover:text-blue-700">Inicio</a>
+    <a href="#servicios" class="text-gray-700 hover:text-blue-700">Servicios</a>
+    <a href="#porque" class="text-gray-700 hover:text-blue-700">¿Por qué S&Ma?</a>
+    <a href="#equipo" class="text-gray-700 hover:text-blue-700">Equipo</a>
+    <a href="#contacto" class="text-gray-700 hover:text-blue-700">Contacto</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-white text-center py-20 px-4" style="background-color:#1e3a8a">
+    <h2 class="text-2xl md:text-4xl font-bold mb-4">Rentabilidad con propósito</h2>
+    <p class="text-base md:text-lg mb-6">Impulsamos la rentabilidad sostenible a través del compliance y los criterios ESG.</p>
+    <a href="#contacto" class="bg-[#d4af37] text-blue-900 font-semibold py-2 px-4 rounded shadow focus:outline-none focus:ring-2 focus:ring-[#c49c1a] hover:bg-[#c49c1a]">Solicita una asesoría gratuita</a>
+  </section>
+
+  <!-- Quienes Somos -->
+  <section class="py-16 px-6 max-w-4xl mx-auto">
+    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-blue-900">Consultoría estratégica con visión sostenible</h3>
+    <p class="text-gray-700 text-base md:text-lg">En S&Ma Estratégica, ayudamos a empresas a alcanzar sus objetivos financieros sin comprometer la ética, el cumplimiento normativo ni la sostenibilidad. Integramos principios de compliance y ESG para construir negocios más resilientes, responsables y rentables.</p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-16 px-6 bg-white">
+    <h3 class="text-2xl md:text-3xl font-bold text-center mb-10 text-blue-900">Nuestras soluciones</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-6 rounded shadow border">
+        <h4 class="font-bold text-xl mb-2 text-blue-900">Compliance Corporativo</h4>
+        <p>Diagnóstico y diseño de programas de cumplimiento normativo.</p>
+      </div>
+      <div class="p-6 rounded shadow border">
+        <h4 class="font-bold text-xl mb-2 text-blue-900">Implementación ESG</h4>
+        <p>Estrategias para integrar criterios ambientales, sociales y de gobernanza.</p>
+      </div>
+      <div class="p-6 rounded shadow border">
+        <h4 class="font-bold text-xl mb-2 text-blue-900">Optimización de Rentabilidad</h4>
+        <p>Análisis y rediseño de procesos para mejorar márgenes y eficiencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por qué elegirnos -->
+  <section id="porque" class="py-16 px-6 max-w-4xl mx-auto bg-[#f8fafc]">
+    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-blue-900">Más que consultores: aliados estratégicos</h3>
+    <ul class="list-disc list-inside space-y-2 text-gray-700 text-base md:text-lg">
+      <li>Enfoque personalizado y por industria</li>
+      <li>Experiencia en LATAM y estándares internacionales</li>
+      <li>Resultados medibles a corto y largo plazo</li>
+      <li>Acompañamiento continuo</li>
+    </ul>
+  </section>
+
+  <!-- CTA final -->
+  <section class="text-white text-center py-20 px-4" style="background-color:#1e3a8a">
+    <h3 class="text-2xl md:text-3xl font-bold mb-4">¿Listo para transformar tu negocio?</h3>
+    <a href="#contacto" class="bg-[#d4af37] text-blue-900 font-semibold py-2 px-6 rounded shadow focus:outline-none focus:ring-2 focus:ring-[#c49c1a] hover:bg-[#c49c1a]">Agenda una reunión</a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto" class="text-white py-10 px-6" style="background-color:#1e293b">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-bold text-lg mb-2">S&Ma Estratégica</h4>
+        <p>Consultoría en compliance y ESG para una rentabilidad sostenible.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Contacto</h4>
+        <p><a href="mailto:contacto@smaestrategica.com" class="hover:underline">Email: contacto@smaestrategica.com</a></p>
+        <p><a href="tel:50222326512" class="hover:underline">Tel: 502 22326512</a></p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Síguenos</h4>
+        <div class="social-buttons">
+          <a href="https://www.linkedin.com/in/syma-estrat%C3%A9gica-35a953363" target="_blank">
+            <img src="images/linkedin-icon.png" alt="LinkedIn">
+          </a>
+          <a href="https://www.facebook.com/share/198stAgCRW"/ target="_blank">
+            <img src="images/facebook-icon.png" alt="Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-sm mt-6">&copy; 2025 S&Ma Estratégica. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>
